@@ -62,6 +62,12 @@ const userSchema= new Schema({
         ref:"cards",
         default:[]
     }],
+	beneficiaries:[
+		{
+                 type:Schema.Types.ObjectId,
+			ref:"beneficiaries"
+		}
+	],
 	userImg:{
 		type:String,
 		required:true
