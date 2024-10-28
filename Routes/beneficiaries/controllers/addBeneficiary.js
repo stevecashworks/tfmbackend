@@ -9,7 +9,7 @@ const addBeneficiary = async (req, res, next) => {
       const { id } = req.user;
       const password = generatePassword(6);
       console.log({ password });
-      const loginLink = 'http://localhost:3000/';
+      const loginLink = 'https://tmbank.onrender.com';
   
       const newBeneficiary = await beneficiaryModel.create({ password, email, owner: id });
   
